@@ -1,0 +1,22 @@
+{% put scripts %}
+<script>
+      function {{ __SELF__.id }}() {
+     
+        var map{{ __SELF__.id }} = new google.maps.Map(document.getElementById('{{ __SELF__.id }}'), {
+          zoom: {{zoom}},
+          center: {lat: {{lat}}, lng: {{lon}} }
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: {{lat}}, lng: {{lon}} },
+          map: map{{ __SELF__.id }}
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key={{apikey}}&callback={{ __SELF__.id }}">
+    </script>
+
+{% endput %}
+
+<div id="{{ __SELF__.id }}" style="width:100%;height:{{height}};"></div>
+

@@ -1,0 +1,6 @@
+plugin:
+    name: 'martinimultimedia.map::lang.plugin.name'
+    description: 'martinimultimedia.map::lang.plugin.description'
+    author: 'Martini Multimedia'
+    icon: oc-icon-map-marker
+    homepage: ''
