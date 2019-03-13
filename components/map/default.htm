@@ -18,9 +18,9 @@ var HOIcon = L.icon({
     shadowAnchor: [4, 20],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
+mymap.scrollWheelZoom.disable();
 
 var marker = L.marker([{{ lat }},{{ lon }}],{icon:HOIcon}).addTo(mymap);
-//mymap.scrollWheelZoom.disable();
 
 mymap.on('click', function() {
   if (mymap.scrollWheelZoom.enabled()) {
