@@ -1,4 +1,4 @@
-<?php namespace MartiniMultimedia\Map;
+<?php namespace MoonWalkerz\Map;
 
 use System\Classes\PluginBase;
 
@@ -7,8 +7,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
     	 return [
-            'MartiniMultimedia\Map\Components\Map'  => 'map',
-             'MartiniMultimedia\Map\Components\GoogleMap'  => 'googlemap'
+            'MoonWalkerz\Map\Components\Map'  => 'map',
+             'MoonWalkerz\Map\Components\GoogleMap'  => 'googlemap'
         ];
     }
 

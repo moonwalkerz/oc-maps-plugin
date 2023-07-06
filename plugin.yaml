@@ -1,6 +1,6 @@
 plugin:
-    name: 'martinimultimedia.map::lang.plugin.name'
-    description: 'martinimultimedia.map::lang.plugin.description'
-    author: 'Martini Multimedia'
+    name: 'moonwalkerz.map::lang.plugin.name'
+    description: 'moonwalkerz.map::lang.plugin.description'
+    author: 'MoonWalkerz'
     icon: oc-icon-map-marker
     homepage: ''

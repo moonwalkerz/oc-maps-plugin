@@ -1,4 +1,4 @@
-<?php namespace MartiniMultimedia\Map\Components;
+<?php namespace MoonWalkerz\Map\Components;
 
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
@@ -74,9 +74,9 @@ class   Map extends ComponentBase
      */
     public function onRun()
     {
-        $this->addCss('/plugins/martinimultimedia/map/assets/leaflet/leaflet.css');
+        $this->addCss('/plugins/moonwalkerz/map/assets/leaflet/leaflet.css');
 
-        $this->addJs('/plugins/martinimultimedia/map/assets/leaflet/leaflet.js');
+        $this->addJs('/plugins/moonwalkerz/map/assets/leaflet/leaflet.js');
     }
 
     public function onRender()
