@@ -11,13 +11,7 @@ class Plugin extends PluginBase
              'MartiniMultimedia\Map\Components\GoogleMap'  => 'googlemap'
         ];
     }
-    public function registerPageSnippets()
-    {
-        return [
-            'MartiniMultimedia\Map\Components\Map'  => 'map',
-             'MartiniMultimedia\Map\Components\GoogleMap'  => 'googlemap'
-        ];
-    }
+
     public function registerSettings()
     {
     }
