@@ -1,0 +1,31 @@
+{
+    "name": "moonwalkerz/oc-maps-plugin",
+    "description": "Maps Plugin for October CMS",
+    "type": "october-plugin",
+    "require": {
+    	"composer/installers": "~1.0",
+        "php": ">=7.4"
+    },
+    "keywords": [
+      "october",
+      "cms",
+    "maos",
+    "plugin"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alain Martini",
+            "email": "alain@moonwalkerz.dev"
+        },
+        {
+          "name": "Nicolò Verginella",
+          "email": "webmaster@moonwalkerz.dev"
+      }
+    ],
+    "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
+}
