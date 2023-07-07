@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
         'name' => 'Map',
-        'description' => 'Componente Mappe'
+        'description' => 'Maps Component'
     ]
 ];

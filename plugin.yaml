@@ -1,6 +1,6 @@
 plugin:
-    name: 'moonwalkerz.map::lang.plugin.name'
-    description: 'moonwalkerz.map::lang.plugin.description'
+    name: 'moonwalkerz.maps::lang.plugin.name'
+    description: 'moonwalkerz.maps::lang.plugin.description'
     author: 'MoonWalkerz'
     icon: oc-icon-map-marker
     homepage: ''

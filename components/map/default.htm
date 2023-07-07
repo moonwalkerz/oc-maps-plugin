@@ -1,5 +1,7 @@
 {% put scripts %}
-<script>
+<script defer>
+
+document.addEventListener("DOMContentLoaded",function() {
 var mymap = L.map('{{ __SELF__.id }}').setView([{{ lat }},{{ lon }}], {{ zoom }});
 
 L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png', {
@@ -8,9 +10,11 @@ L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(mymap);
 
+{% if customMarker %}
 var HOIcon = L.icon({
-    iconUrl: "{{ ('assets/images/'~mark)|theme }}",
-    shadowUrl: "{{ ('assets/images/'~shadow)|theme }}",
+
+  iconUrl: "{{ mark|media }}",
+    shadowUrl: "{{ shadow|media }}",
 
     iconSize:     [30, 50], // size of the icon
     shadowSize:   [40, 20], // size of the shadow
@@ -18,9 +22,13 @@ var HOIcon = L.icon({
     shadowAnchor: [4, 20],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
+{% endif %}
 mymap.scrollWheelZoom.disable();
 
-var marker = L.marker([{{ lat }},{{ lon }}],{icon:HOIcon}).addTo(mymap);
+var marker = L.marker(
+  [{{ lat }},{{ lon }}]
+  {% if customMarker %}, {icon:HOIcon}{% endif %}
+  ).addTo(mymap);
 
 mymap.on('click', function() {
   if (mymap.scrollWheelZoom.enabled()) {
@@ -30,10 +38,10 @@ mymap.on('click', function() {
     mymap.scrollWheelZoom.enable();
     }
   });
-
+  });
 
 </script>
 {% endput %}
 
-<div id="{{ __SELF__.id }}" style="width:100%;height:{{height}};"></div>
+<div id="{{ __SELF__.id }}" style="width:100%;height:{{height}};" data-mark="{{mark}}" data-shadow="{{shadow}}"></div>
 

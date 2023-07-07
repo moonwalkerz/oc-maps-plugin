@@ -1,4 +1,4 @@
-<?php namespace MoonWalkerz\Map\Components;
+<?php namespace MoonWalkerz\Maps\Components;
 
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;

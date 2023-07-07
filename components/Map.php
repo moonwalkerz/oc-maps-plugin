@@ -1,4 +1,4 @@
-<?php namespace MoonWalkerz\Map\Components;
+<?php namespace MoonWalkerz\Maps\Components;
 
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
@@ -15,6 +15,7 @@ class   Map extends ComponentBase
     public $height="550px";
      public $mark="mark.png";
       public $shadow="mark-shadow.png";
+    public $customMarker=false;
 
     public function componentDetails()
     {
@@ -51,6 +52,12 @@ class   Map extends ComponentBase
                 'description' => 'Map Height',
                 'type'        => 'string',
                 'default'     => '550px'
+             ],
+            'customMarker' => [
+                'title'       => 'Custom Marker',
+                'description' => 'Use a custom marker',
+                'type'        => 'checkbox',
+                'default'     => 'false'
             ]
             ,
              'mark' => [
@@ -74,9 +81,9 @@ class   Map extends ComponentBase
      */
     public function onRun()
     {
-        $this->addCss('/plugins/moonwalkerz/map/assets/leaflet/leaflet.css');
+        $this->addCss('/plugins/moonwalkerz/maps/assets/leaflet/leaflet.css');
 
-        $this->addJs('/plugins/moonwalkerz/map/assets/leaflet/leaflet.js');
+        $this->addJs('/plugins/moonwalkerz/maps/assets/leaflet/leaflet.js');
     }
 
     public function onRender()
@@ -93,7 +100,7 @@ class   Map extends ComponentBase
         $this->zoom =$this->page['zoom']= $this->property('zoom');
          $this->mark =$this->page['mark']= $this->property('mark');
           $this->shadow =$this->page['shadow']= $this->property('shadow');
-
+        $this->customMarker =$this->page['customMarker']= $this->property('customMarker');
     }
 
 }
