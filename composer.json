@@ -1,5 +1,5 @@
 {
-    "name": "moonwalkerz/oc-maps-plugin",
+    "name": "moonwalkerz/maps-plugin",
     "description": "Maps Plugin for October CMS",
     "type": "october-plugin",
     "require": {"php": ">=7.4"},

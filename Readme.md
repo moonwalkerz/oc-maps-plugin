@@ -18,7 +18,7 @@ No dependencies!
 
 You can install this plugin with this command:
 ```
-composer require moonwalkerz/oc-maps-plugin
+composer require moonwalkerz/maps-plugin
 ```
 
 
