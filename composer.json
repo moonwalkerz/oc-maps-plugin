@@ -2,14 +2,13 @@
     "name": "moonwalkerz/oc-maps-plugin",
     "description": "Maps Plugin for October CMS",
     "type": "october-plugin",
-    "require": {
-    	"composer/installers": "~1.0",
-        "php": ">=7.4"
-    },
+    "require": {"php": ">=7.4"},
     "keywords": [
       "october",
       "cms",
-    "maos",
+    "maps",
+    "Google Maps",
+    "Leaflet",
     "plugin"
     ],
     "license": "MIT",

@@ -2,24 +2,38 @@
 
 # Maps | October CMS
 
-Description is coming soon
+MoonWalkerz present "Maps"! A simple map plugin for October CMS. this plugin allows you to add Google Maps or Leaflet map on your website. What more do you want?
 
 ## 🔥 Features 🔥
 
-- Features is coming soon
-- Features is coming soon
+- Leaflet maps integration
+- Google Maps integration
+- Siple to use!
 
 ## 💊 Dependencies 💊
 
-Dependencies is coming soon
+No dependencies!
 
 ## 🚀 Install 🚀
 
-Install is coming soon
+You can install this plugin with this command:
+```
+composer require moonwalkerz/oc-maps-plugin
+```
+Next:
+```
+php artisan october:migrate
+```
 
 ## ⚙️ Documentation ⚙️
 
-Documentation is coming soon
+Using this plugin is really simple! Once installed just insert the component on the page and and enter the settings you want.\
+Theare are 2 type of components:
+- "Maps" utilizes Leaflet maps. To use this plugin, you need to provide latitude and longitude coordinates, zoom settings, and the desired height in pixels. If you want a custom marker, you can add "mark.png" and "mark-shadow.png" to "storage/app/media" (you can also customize the file names). Otherwise, the plugin will use the default mark.
+-  "GoogleMap" utilizes a Google Map maps. To use this plugin, you need to provide latitude and longitude coordinates, zoom settings, the desired height in pixels and your Google Api Key. 
+
+## 🙏 Big Thanks to 🙏
+- Leaflet | http://leafletjs.com
 
 ## 🤑 Support Us 🤑
 

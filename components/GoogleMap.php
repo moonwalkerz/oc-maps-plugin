@@ -51,22 +51,7 @@ class  GoogleMap extends ComponentBase
                 'description' => 'Map Height',
                 'type'        => 'string',
                 'default'     => '550px'
-            ]
-            ,
-             'mark' => [
-                'title'       => 'Marker',
-                'description' => 'Marker icon (30x50px)',
-                'type'        => 'string',
-                'default'     => 'mark.png'
-            ]
-            ,
-             'shadow' => [
-                'title'       => 'Marker shadow',
-                'description' => 'Marker shadow (40x50px)',
-                'type'        => 'string',
-                'default'     => 'mark-shadow.png'
-            ]
-            ,
+            ],
              'apikey' => [
                 'title'       => 'API Key',
                 'description' => 'Google Maps API Key',

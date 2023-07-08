@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
-        'name' => 'Map',
-        'description' => 'Maps Component'
+        'name' => 'Maps',
+        'description' => 'Leaflet and Google Maps integration'
     ]
 ];
