@@ -20,10 +20,7 @@ You can install this plugin with this command:
 ```
 composer require moonwalkerz/oc-maps-plugin
 ```
-Next:
-```
-php artisan october:migrate
-```
+
 
 ## ⚙️ Documentation ⚙️
 
