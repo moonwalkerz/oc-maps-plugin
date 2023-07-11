@@ -1,6 +1,6 @@
 {
     "name": "moonwalkerz/maps-plugin",
-    "description": "Maps Plugin for October CMS",
+    "description": "Just a simple Leaflet and Google Maps integration",
     "type": "october-plugin",
     "require": {"php": ">=7.4"},
     "keywords": [
