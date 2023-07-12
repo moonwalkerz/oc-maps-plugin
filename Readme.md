@@ -24,7 +24,10 @@ composer require moonwalkerz/maps-plugin
 
 ## ⚙️ Documentation ⚙️
 
-Using this plugin is really simple! Once installed just insert the component on the page and and enter the settings you want.\
+Using this plugin is really simple:
+1) add {% styles %} and {% scripts %} tags in your layout after css and javascript code.
+2) insert the component on the page and and enter the settings you want.
+
 Theare are 2 type of components:
 - "Maps" utilizes Leaflet maps. To use this plugin, you need to provide latitude and longitude coordinates, zoom settings, and the desired height in pixels. If you want a custom marker, you can add "mark.png" and "mark-shadow.png" to "storage/app/media" (you can also customize the file names). Otherwise, the plugin will use the default mark.
 -  "GoogleMap" utilizes a Google Map maps. To use this plugin, you need to provide latitude and longitude coordinates, zoom settings, the desired height in pixels and your Google Api Key. 
